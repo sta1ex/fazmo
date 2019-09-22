@@ -123,6 +123,41 @@
 						<label for="name">Ваше ім’я</label>
 						<input required cf-questions="Привіт! Як до вас звертатися? 😊" type="text" class="form-control" name="name" id="name">
 					</fieldset>
+					
+					<fieldset>					
+						<label for="mclasses">Майстер-клас</label>
+						<div class="radio-control" >
+							<input cf-label="Fluid Art картина (3 години)" type="radio" cf-image="images/Frame1.jpg" name="mclasses" tabindex="1" value="0">
+							<input cf-label="Креативний світильник" type="radio" cf-image="images/Frame2.jpg" name="mclasses" tabindex="2" value="1">
+							<input cf-label="Керамічна скульптура" type="radio" cf-image="images/Frame3.jpg" name="mclasses" tabindex="3" value="2">
+							<input cf-label="Креативний малюнок" type="radio" cf-image="images/Frame4.jpg" name="mclasses" tabindex="4" value="3">
+							<input cf-label="Автоматичні пристрої Arduino" type="radio" cf-image="images/Frame5.jpg" name="mclasses" tabindex="5" value="4">
+							<input cf-label="3D-моделювання" type="radio" cf-image="images/Frame6.jpg" name="mclasses" tabindex="6" value="5">
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<li class="control2">
+							<label>
+								<input cf-questions="{previous-answer}, прекрасне ім’я, радий вас вітати! Я тут щоби вам допомогти, який курс вас цікавить?|{previous-answer}, мені є що вам запропонувати! Який курс вас цікавить?" cf-image="images/Frame1.jpg" type="checkbox" name="account-information" id="account_information-flue-1" checked value="1" class="checkbox">Fluid Art картина (3 години)
+							</label>
+							<label>
+								<input type="checkbox" name="account-information" cf-image="images/Frame2.jpg" id="account_information-flue-2" checked value="1" class="checkbox">Креативний світильник
+							</label>
+							<label>
+								<input type="checkbox" name="account-information" cf-image="images/Frame3.jpg" id="account_information-flue-3" checked value="1" class="checkbox">Керамічна скульптура
+							</label>
+							<label>
+								<input type="checkbox" name="account-information" cf-image="images/Frame4.jpg" id="account_information-flue-4" checked value="1" class="checkbox">Креативний малюнок
+							</label>
+							<label>
+								<input type="checkbox" name="account-information" cf-image="images/Frame5.jpg" id="account_information-flue-5" checked value="1" class="checkbox">Автоматичні пристрої Arduino
+							</label>
+							<label>
+								<input type="checkbox" name="account-information" cf-image="images/Frame6.jpg" id="account_information-flue-6" checked value="1" class="checkbox">3D-моделювання
+							</label>
+						</li>
+					</fieldset>
 
 					<fieldset>
 						<label for="mclasses">Майстер-клас</label>
