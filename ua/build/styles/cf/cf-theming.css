@@ -33,7 +33,7 @@ main.content .conversational-form cf-chat-response.robot {
   padding-left: 48px;
 }
 main.content .conversational-form cf-chat-response.robot text {
-  color: #222;
+  color: #449AFE;
 }
 main.content .conversational-form cf-chat-response.robot text > p {
   border-radius: 4px 20px 20px 20px;
@@ -57,11 +57,11 @@ main.content .conversational-form cf-chat-response.user text {
   color: #fff;
 }
 main.content .conversational-form cf-chat-response.user text > p {
-  background: #222;
+  background: #449AFE;
   border-radius: 20px 4px 20px 20px;
 }
 main.content .conversational-form cf-chat-response.user thumb {
-  background-color: #222;
+  background-color: #449AFE;
   background-size: 20px 16px;
   background-repeat: no-repeat;
   background-position: 11px 12px;
@@ -87,7 +87,7 @@ main.content .conversational-form cf-input textarea:not(:focus) {
   box-shadow: 0 0 1px rgba(58,58,58,0.5);
 }
 main.content .conversational-form cf-input-button {
-  background: #222;
+  background: #449AFE;
   height: 42px;
   width: 42px;
   border: none;
@@ -108,10 +108,10 @@ main.content .conversational-form cf-input-button .cf-icon-audio {
   mix-blend-mode: difference;
 }
 main.content .conversational-form cf-input-button cf-icon-audio-eq {
-  border-color: #222;
+  border-color: #449AFE;
 }
 main.content .conversational-form .cf-button {
-  color: #222;
+  color: #449AFE;
   border-color: #ddd;
   transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1), border-color 0.75s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
   background: none !important;
@@ -137,7 +137,7 @@ main.content .conversational-form .cf-button:focus cf-radio,
 main.content .conversational-form .cf-button:hover cf-radio,
 main.content .conversational-form .cf-button[checked="checked"] cf-radio,
 main.content .conversational-form .cf-button.selected cf-radio {
-  background: #222;
+  background: #449AFE;
 }
 main.content .conversational-form cf-list-button:after {
   background-image: none;
