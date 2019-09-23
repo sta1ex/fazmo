@@ -24,7 +24,7 @@ main.content .conversational-form cf-chat-response thumb {
   width: 42px;
 }
 main.content .conversational-form cf-chat-response thumb > p {
-  background-color: #fefefe;
+  background-color: #ebebeb;
 }
 main.content .conversational-form cf-chat-response:not(:last-of-type) {
   margin-bottom: 10px;
@@ -37,7 +37,7 @@ main.content .conversational-form cf-chat-response.robot text {
 }
 main.content .conversational-form cf-chat-response.robot text > p {
   border-radius: 4px 20px 20px 20px;
-  background: #fefefe;
+  background: #ebebeb;
 }
 main.content .conversational-form cf-chat-response.robot text > p:not(:only-child):first-child {
   border-radius: 20px 20px 20px 4px;
@@ -46,7 +46,7 @@ main.content .conversational-form cf-chat-response.robot text > p:not(:only-chil
   border-radius: 4px 20px 20px 20px;
 }
 main.content .conversational-form cf-chat-response.robot thumb {
-  background-color: #fefefe;
+  background-color: #ebebeb;
   background-size: 20px 20px;
   background-repeat: no-repeat;
 }
