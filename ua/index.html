@@ -132,19 +132,19 @@
 								<label><input cf-questions="{previous-answer}, радий знайомству! Я тут щоби вам допомогти, який урок вас цікавить?|{previous-answer}, мені є що вам запропонувати! Який урок вас цікавить?" cf-label="Fluid Art картина (3 години)" type="radio" cf-image="images/Frame1.jpg" name="mclasses" tabindex="1" value="fluid-art">Fluid Art картина (3 години)</label>
 							</div>
 							<div class="radio-control">
-								<label><input cf-label="Креативний світильник" type="radio" cf-image="images/Frame2.jpg" name="mclasses" tabindex="2" value="2">Креативний світильник</label>
+								<label><input cf-label="Креативний світильник" type="radio" cf-image="images/Frame2.jpg" name="mclasses" tabindex="2" value="lighting">Креативний світильник</label>
 							</div>
 							<div class="radio-control">
-								<label><input cf-label="Керамічна скульптура" type="radio" cf-image="images/Frame3.jpg" name="mclasses" tabindex="3" value="3">Керамічна скульптура</label>
+								<label><input cf-label="Керамічна скульптура" type="radio" cf-image="images/Frame3.jpg" name="mclasses" tabindex="3" value="ceramics">Керамічна скульптура</label>
 							</div>
 							<div class="radio-control">
-								<label><input cf-label="Креативний малюнок" type="radio" cf-image="images/Frame4.jpg" name="mclasses" tabindex="4" value="4">Креативний малюнок</label>
+								<label><input cf-label="Креативний малюнок" type="radio" cf-image="images/Frame4.jpg" name="mclasses" tabindex="4" value="drawing">Креативний малюнок</label>
 							</div>
 							<div class="radio-control">
-								<label><input cf-label="Пристрої Arduino" type="radio" cf-image="images/Frame5.jpg" name="mclasses" tabindex="5" value="5">Автоматичні пристрої Arduino</label>
+								<label><input cf-label="Пристрої Arduino" type="radio" cf-image="images/Frame5.jpg" name="mclasses" tabindex="5" value="arduino">Автоматичні пристрої Arduino</label>
 							</div>
 							<div class="radio-control">
-								<label><input cf-label="3D-моделювання" type="radio" cf-image="images/Frame6.jpg" name="mclasses" tabindex="6" value="6">3D-моделювання</label>
+								<label><input cf-label="3D-моделювання" type="radio" cf-image="images/Frame6.jpg" name="mclasses" tabindex="6" value="3d">3D-моделювання</label>
 							</div>
 						</div>
 					</fieldset>
@@ -191,6 +191,221 @@
 						</select>
 					</fieldset>
 					<!--mclasses1 end-->
+					
+					<!--mclasses2 Креативний світильник start-->
+					<select required
+						cf-questions="На цьому майстер-класі ви проговорите з експертом ідею власної конструкції, розробите схему проводки та ізоляції, оптимальний спосіб реалізації та які для цього знадобляться матеріали і інструменти. По завершенні дводенного практикуму у вас в руках буде працюючий світильник, створений власними руками і фантазією. А можливо вам знадобиться майстер-клас із керамічної скульптури, щоб створити власну креативну модель світильника, або майстер-класс по автоматичним пристроям Arduino, щоби світильник став інтерактивним елементом інтер’єру і реагував на денне освітлення чи рух у приміщенні, а може у вам буде бажання, щоб це була повністю інноваційна 3D-модель, надрукована на 3D-принтері та перевтілена в арт-об’єкт на майстер-класі з креативного малюнку. Тоді після проходження цих майстер-класів ви повернетеся до створення світильника і завершите власний проект. Тут все можливо і межі тільки у нашій уяві! Вартість двох занять по 3 години: 1750грн."
+						cf-conditional-mclasses="lighting"
+						name="mclasses2"
+					>
+						<option></option>
+						<option value="yes">Так, те що треба!</option>
+						<option value="no">Ні, дякую.</option>
+					</select>
+
+
+					<fieldset>
+						<label for="quantity">Кількість місць</label>
+						<select cf-conditional-mclasses2="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+							<option></option>
+							<option>Буду особисто</option>
+							<option>Вдвох</option>
+							<option>Втрьох</option>
+							<option>Четверо</option>
+							<option>П’ятеро</option>
+						</select>
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Ваш Email</label>
+						<input cf-conditional-mclasses2="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+					</fieldset>
+					
+					<fieldset>
+						<label for="comment">Коментар до запиту</label>
+						<input cf-conditional-mclasses2="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+					</fieldset>
+
+					<fieldset style="display: none;">
+						<label for="thats-all">Ну що, відправляємо запит?</label>
+						<select cf-conditional-mclasses2="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+							<option></option>
+							<option>Авжеж!</option>
+						</select>
+					</fieldset>
+					<!--mclasses2 end-->
+					
+					<!--mclasses3 Керамічна скульптура start-->
+					<select required
+						cf-questions="Під чуйним керівництвом майстра з керамічних мистецтв ви втілите власну ідею чи об’єкт, яким будуть захоплюватися ваші близькі та друзі. А після того, як ви її створите, вона буде випалена майстром і на другому занятті ви додасте формі яскравих фарб і створите справжній завершений об’єкт мистецтва. А після цього можете записатися у групу зі ствоення світильника, щоб перевтілити вашу скульптуру у функціональний елемент інтер’єру! Вартість двох занять по 3 години: 1750грн."
+						cf-conditional-mclasses="ceramics"
+						name="mclasses3"
+					>
+						<option></option>
+						<option value="yes">Так, те що треба!</option>
+						<option value="no">Ні, дякую.</option>
+					</select>
+
+
+					<fieldset>
+						<label for="quantity">Кількість місць</label>
+						<select cf-conditional-mclasses3="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+							<option></option>
+							<option>Буду особисто</option>
+							<option>Вдвох</option>
+							<option>Втрьох</option>
+							<option>Четверо</option>
+							<option>П’ятеро</option>
+						</select>
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Ваш Email</label>
+						<input cf-conditional-mclasses3="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+					</fieldset>
+					
+					<fieldset>
+						<label for="comment">Коментар до запиту</label>
+						<input cf-conditional-mclasses3="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+					</fieldset>
+
+					<fieldset style="display: none;">
+						<label for="thats-all">Ну що, відправляємо запит?</label>
+						<select cf-conditional-mclasses3="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+							<option></option>
+							<option>Авжеж!</option>
+						</select>
+					</fieldset>
+					<!--mclasses3 end-->
+					
+					<!--mclasses4 Креативний малюнок start-->
+					<select required
+						cf-questions="Тут не буде нудних уроків академичного малюнку і вам не потрібно буде малювати натюрморт. Ми зфокусуємось тільки на вашій фантазії і будемо малювати на будь-якій поверхні що забажаєте, починаючи від полотна картини і завершуючи креативним декоруванням вази чи стільця, який ви дуже давно хотіли реставрувати. До речі, ви можете записатися у групу з керамічної скульптури і створити свій власний об’єкт домашнього чи офісного інтер’єру. Вартість двох занять по 3 години: 1250грн."
+						cf-conditional-mclasses="drawing"
+						name="mclasses4"
+					>
+						<option></option>
+						<option value="yes">Так, те що треба!</option>
+						<option value="no">Ні, дякую.</option>
+					</select>
+
+
+					<fieldset>
+						<label for="quantity">Кількість місць</label>
+						<select cf-conditional-mclasses4="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+							<option></option>
+							<option>Буду особисто</option>
+							<option>Вдвох</option>
+							<option>Втрьох</option>
+							<option>Четверо</option>
+							<option>П’ятеро</option>
+						</select>
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Ваш Email</label>
+						<input cf-conditional-mclasses4="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+					</fieldset>
+					
+					<fieldset>
+						<label for="comment">Коментар до запиту</label>
+						<input cf-conditional-mclasses4="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+					</fieldset>
+
+					<fieldset style="display: none;">
+						<label for="thats-all">Ну що, відправляємо запит?</label>
+						<select cf-conditional-mclasses4="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+							<option></option>
+							<option>Авжеж!</option>
+						</select>
+					</fieldset>
+					<!--mclasses4 end-->
+					
+					<!--mclasses5 Пристрої Arduino start-->
+					<select required
+						cf-questions="На цьому майстер-класі експерт познайомить вас із пристроями Arduino. Розкаже, покаже та допоможе реалізувати вашу ідею автоматичного пристрою з датчиками руху, світла і таймерів. На два дні ви станете справжнім інженером-конструктором без особливих зусіль. А якщо у вас буде бажання зробити світильник із датчиками освітлення чи руху, то запишиться на майстер-клас зі створення світильника, який ви зможете вдосконалити на цьому майстер-класі. Вартість двох занять по 3 години: 2400грн."
+						cf-conditional-mclasses="arduino"
+						name="mclasses5"
+					>
+						<option></option>
+						<option value="yes">Так, те що треба!</option>
+						<option value="no">Ні, дякую.</option>
+					</select>
+
+
+					<fieldset>
+						<label for="quantity">Кількість місць</label>
+						<select cf-conditional-mclasses5="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+							<option></option>
+							<option>Буду особисто</option>
+							<option>Вдвох</option>
+							<option>Втрьох</option>
+							<option>Четверо</option>
+							<option>П’ятеро</option>
+						</select>
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Ваш Email</label>
+						<input cf-conditional-mclasses5="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+					</fieldset>
+					
+					<fieldset>
+						<label for="comment">Коментар до запиту</label>
+						<input cf-conditional-mclasses5="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+					</fieldset>
+
+					<fieldset style="display: none;">
+						<label for="thats-all">Ну що, відправляємо запит?</label>
+						<select cf-conditional-mclasses5="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+							<option></option>
+							<option>Авжеж!</option>
+						</select>
+					</fieldset>
+					<!--mclasses5 end-->
+					
+					<!--mclasses6 3D-моделювання start-->
+					<select required
+						cf-questions="Під керівництвом майстра ви створите 3D-модель власної ідеї, будь то скульптура, деталь інтер’єру чи навіть дитяча іграшка. По завершенні майстер-классу ви зможете надрукувати свою модель на 3D-принтері партнерів майстерні та з готовим виробом записатися в групу креативного малюнку, щоб перевтілити ваш виріб у справжній об’єкт арт-мистецтва. Вартість двох занять по 3 години: 1750грн."
+						cf-conditional-mclasses="3d"
+						name="mclasses6"
+					>
+						<option></option>
+						<option value="yes">Так, те що треба!</option>
+						<option value="no">Ні, дякую.</option>
+					</select>
+
+
+					<fieldset>
+						<label for="quantity">Кількість місць</label>
+						<select cf-conditional-mclasses6="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+							<option></option>
+							<option>Буду особисто</option>
+							<option>Вдвох</option>
+							<option>Втрьох</option>
+							<option>Четверо</option>
+							<option>П’ятеро</option>
+						</select>
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Ваш Email</label>
+						<input cf-conditional-mclasses6="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+					</fieldset>
+					
+					<fieldset>
+						<label for="comment">Коментар до запиту</label>
+						<input cf-conditional-mclasses6="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+					</fieldset>
+
+					<fieldset style="display: none;">
+						<label for="thats-all">Ну що, відправляємо запит?</label>
+						<select cf-conditional-mclasses6="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+							<option></option>
+							<option>Авжеж!</option>
+						</select>
+					</fieldset>
+					<!--mclasses6 end-->
 
 					<fieldset style="display: none;">
 						<label for="thats-all">Почати знову?</label>
