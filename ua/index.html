@@ -129,7 +129,7 @@
 						<label for="mclasses">Майстер-клас</label>
 						<div class="radio-control" >
 							<div class="radio-control">
-								<label><input cf-questions="{previous-answer}, радий знайомству! Я тут щоби вам допомогти, який урок вас цікавить?|{previous-answer}, мені є що вам запропонувати! Який урок вас цікавить?" cf-label="Fluid Art картина (3 години)" type="radio" cf-image="images/Frame1.jpg" name="mclasses" tabindex="1" value="0">Fluid Art картина (3 години)</label>
+								<label><input cf-questions="{previous-answer}, радий знайомству! Я тут щоби вам допомогти, який урок вас цікавить?|{previous-answer}, мені є що вам запропонувати! Який урок вас цікавить?" cf-label="Fluid Art картина (3 години)" type="radio" cf-image="images/Frame1.jpg" name="mclasses" tabindex="1" value="Fluid Art картина (3 години)">Fluid Art картина (3 години)</label>
 							</div>
 							<div class="radio-control">
 								<label><input cf-label="Креативний світильник" type="radio" cf-image="images/Frame2.jpg" name="mclasses" tabindex="2" value="1">Креативний світильник</label>
@@ -149,12 +149,11 @@
 						</div>
 					</fieldset>
 					
-					
-					<!--mclasses0 start-->
+					<!--mclasses1 Fluid Art картина (3 години) start-->
 					<select required
 						cf-questions="Пропоную вам одноденний майстер-клас зі створення абстрактної картини в стилі Fluid Art. Це медитативний і терапевтичний метод творчості, в результаті якого за 3 години ви отримуєте довершений предмет інтер‘єру з проявом настрою і характеру вашого стану і душі в момент творчості. Вартість трьох годин заняття: 975грн."
-						cf-conditional-mclasses="0"
-						name="mclasses0"
+						cf-conditional-mclasses="Fluid Art картина (3 години)"
+						name="mclasses1"
 					>
 						<option></option>
 						<option value="yes">Так, те що треба!</option>
@@ -164,7 +163,7 @@
 
 					<fieldset>
 						<label for="quantity">Кількість місць</label>
-						<select cf-conditional-mclasses0="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
+						<select cf-conditional-mclasses1="yes" cf-questions="Скільки людей буде на майстер-класі?" name="quantity" id="quantity" class="form-control">
 							<option></option>
 							<option>Буду особисто</option>
 							<option>Вдвох</option>
@@ -176,22 +175,22 @@
 
 					<fieldset>
 						<label for="email">Ваш Email</label>
-						<input cf-conditional-mclasses0="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
+						<input cf-conditional-mclasses1="yes" pattern=".+\@.+\..+" cf-error="E-mail не корректний" cf-questions="Супер! Щоб я міг зв’язатися з вами, будь ласка, вкажіть ваш email." type="email" class="form-control" name="email" id="your-email">
 					</fieldset>
 					
 					<fieldset>
 						<label for="comment">Коментар до запиту</label>
-						<input cf-conditional-mclasses0="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
+						<input cf-conditional-mclasses1="yes" cf-questions="Хочете ще щось додати від себе?" type="text" class="form-control" name="comment" id="comment">
 					</fieldset>
 
 					<fieldset style="display: none;">
 						<label for="thats-all">Ну що, відправляємо запит?</label>
-						<select cf-conditional-mclasses0="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
+						<select cf-conditional-mclasses1="yes" cf-questions="Ну що, відправляємо запит?" name="submit-form" id="submit-form" class="form-control">
 							<option></option>
 							<option>Авжеж!</option>
 						</select>
 					</fieldset>
-					<!--mclasses0 end-->
+					<!--mclasses1 end-->
 
 					<fieldset style="display: none;">
 						<label for="thats-all">Почати знову?</label>
